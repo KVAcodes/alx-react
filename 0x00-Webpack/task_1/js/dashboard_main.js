@@ -26,5 +26,4 @@ function updateCounter() {
     }
 }
 
-const debouncedUpdateCounter = debounce(updateCounter, 300);
-bt1.click(debouncedUpdateCounter);
+bt1.on('click', debounce(updateCounter, 500));
