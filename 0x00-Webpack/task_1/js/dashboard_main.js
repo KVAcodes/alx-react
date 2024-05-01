@@ -1,5 +1,5 @@
 import $ from "jquery";
-import { debounce } from 'lodash';
+import _ from 'lodash';
 
 const pgh1 = $('<p>').text('Holberton Dashboard');
 const pgh2 = $('<p>').text('Dashboard data for the students');
@@ -26,4 +26,4 @@ function updateCounter() {
     }
 }
 
-bt1.on('click', debounce(updateCounter, 500));
+bt1.on('click', _.debounce(updateCounter, 500));
